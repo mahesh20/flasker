@@ -1,0 +1,24 @@
+<h1>Hello form templates!!</h1>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et enim eos, explicabo nesciunt tempore qui earum beatae aut esse vel ipsa voluptatem. Pariatur ducimus delectus obcaecati quo ab aut!</p>
+
+<p>by {{ first_name }}</p>
+<p>{{ stuff|safe }}</p>
+
+<p>{{ stuff|striptags }}</p>
+
+<p>
+  <strong>Pizza Ingredients:</strong> <br>
+ 
+  {% for i in fav_pizza %}
+      {% if i == 30 %}
+        {{ i * 10 }} <br>
+      {% else %}
+        {{ i }} <br>
+      {% endif %}
+  {% endfor %}
+
+</p>
+
+<p>{{ fav_pizza.1 }}</p>
+
